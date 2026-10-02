@@ -1,4 +1,4 @@
-import Column from '~/widgets/column';
+import { Column } from '~/widgets/column';
 import type { Route } from './+types/home';
 import { DragItem } from '~/entities/drag-item';
 import { useState } from 'react';
@@ -24,7 +24,7 @@ export default function Home() {
       }}
     >
       <div className="grid grid-cols-2 gap-4 h-full max-w-300 mx-auto">
-        <Column id="A">
+        <Column id="A" canAddItem>
           {items.A.map((el, idx) => (
             <DragItem key={el} columnId="A" id={el} index={idx} />
           ))}

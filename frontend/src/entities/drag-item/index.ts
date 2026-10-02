@@ -1,1 +1,1 @@
-export { default as DragItem } from './ui/DragItem';
+export { DragItem } from './ui/DragItem';

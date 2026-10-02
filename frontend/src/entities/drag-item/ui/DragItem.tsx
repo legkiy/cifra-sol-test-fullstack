@@ -5,7 +5,7 @@ type Props = {
   index: number;
   columnId: string;
 };
-const DragItem = ({ columnId, id, index }: Props) => {
+export const DragItem = ({ columnId, id, index }: Props) => {
   const { ref, isDragging } = useSortable({
     id,
     index,
@@ -23,4 +23,3 @@ const DragItem = ({ columnId, id, index }: Props) => {
     </div>
   );
 };
-export default DragItem;
